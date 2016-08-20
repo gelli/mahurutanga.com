@@ -13,7 +13,7 @@ canonifyurls = true
   author = "Chris Gellweiler"
   authorlocation = "Karlsruhe, Germany"
   authorwebsite = "http://mahurutanga.com"
-  bio= "my bio"
+  bio= ""
   logo = "images/logo.png"
   googleAnalyticsUserID = "weihgiwo"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
