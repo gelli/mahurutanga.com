@@ -1,0 +1,27 @@
+baseurl = "http://mahurutanga.com/"
+languageCode = "en-us"
+title = "Mahurutanga"
+theme = "hugo-theme-casper"
+paginate = 5
+DisqusShortname = "mahurutanga-com"
+Copyright = "All rights reserved - 2016"
+canonifyurls = true
+
+[params]
+  description = "life. code. stuff."
+  cover = "images/bg.jpg"
+  author = "Chris Gellweiler"
+  authorlocation = "Karlsruhe, Germany"
+  authorwebsite = "http://mahurutanga.com"
+  bio= "my bio"
+  logo = "images/logo.png"
+  googleAnalyticsUserID = "weihgiwo"
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  # RSSLink = "http://feeds.feedburner.com/..."
+  githubName = "gelli"
+  twitterName = "cgellweiler"
+	instagramName = "45_south"
+  # facebookName = ""
+  # linkedinName = ""
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  hideHUGOSupport = false
