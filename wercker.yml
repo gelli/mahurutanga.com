@@ -22,3 +22,25 @@ build:
         code: |
             git submodule update --init --recursive
     - arjen/hugo-build@1.11.0
+
+deploy:
+    steps:
+        - add-to-known_hosts:
+            hostname: $HOSTNAME
+        - mktemp:
+            envvar: PRIVATEKEY_PATH
+        - create-file:
+            name: write key
+            filename: $PRIVATEKEY_PATH
+            content: $WERCKER_PRIVATE
+            overwrite: true
+        - script:
+            name: remove old files
+            code: ssh -i $PRIVATEKEY_PATH -l $USER -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $HOSTNAME rm -rf ~/mahurutanga.com/www.mahurutanga.com/doc_root/*
+        - script:
+            name: transfer application
+            code: |
+                scp -r -i $PRIVATEKEY_PATH public/* $USER@$HOSTNAME:~/mahurutanga.com/www.mahurutanga.com/doc_root/
+        - script:
+            name: restart nginx
+            code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $HOSTNAME service nginx reload
