@@ -41,6 +41,3 @@ deploy:
             name: transfer application
             code: |
                 scp -r -i $PRIVATEKEY_PATH public/* $USER@$HOSTNAME:$DEPLOY_PATH/
-        - script:
-            name: restart nginx
-            code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $HOSTNAME service nginx reload
