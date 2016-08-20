@@ -32,7 +32,7 @@ deploy:
         - create-file:
             name: write key
             filename: $PRIVATEKEY_PATH
-            content: $DEPLOY_PRIVATE
+            content: $deploy_PRIVATE
             overwrite: true
         - script:
             name: remove old files
