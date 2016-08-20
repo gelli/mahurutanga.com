@@ -17,4 +17,8 @@ box: debian
 # http://devcenter.wercker.com/docs/pipelines/index.html
 build:
   steps:
+    - script:
+        name: initialize git submodules
+        code: |
+            git submodule update --init --recursive
     - arjen/hugo-build@1.11.0
