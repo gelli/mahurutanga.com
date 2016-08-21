@@ -124,4 +124,4 @@ Add the created deploy step to the workflow pipeline.
 
 That's it. Push an update of your website to GitHub to trigger a new build. Wercker will pick it up, generate the static files and automatically copy them over to your server.
 
-It's not perfect, yet since e.g. the website is unreachable for a short time after deleting the old files and copying the new. I will switch the deployment to rsync on a later step and maybe add a real atomic switch via symlinks.
+It's not perfect, yet since e.g. the website is unreachable for a short time after deleting the old files and copying the new ones. I will switch the deployment to rsync on a later step and maybe add a real atomic switch via symlinks.
