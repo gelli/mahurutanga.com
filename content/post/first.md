@@ -1,7 +1,7 @@
 +++
 categories = []
 date = "2016-08-20T14:54:23+02:00"
-tags = []
+tags = ["life"]
 title = "First!"
 
 +++
