@@ -3,7 +3,6 @@ categories = []
 date = "2016-08-20T17:49:32+02:00"
 tags = ["code"]
 title = "Deploying Hugo websites with Wercker"
-draft = true
 
 +++
 
