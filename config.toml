@@ -10,7 +10,7 @@ canonifyurls = true
 [params]
   description = "life. code. stuff."
   cover = "images/bg.jpg"
-  author = "Chris Gellweiler"
+  author = "Chris"
   authorlocation = "Karlsruhe, Germany"
   authorwebsite = "http://mahurutanga.com"
   bio= ""
