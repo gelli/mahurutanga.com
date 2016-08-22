@@ -22,5 +22,6 @@ deploy:
             hide-from-log: true
         - sjoerdmulder/rsync-deploy@0.1.0:
             host: $HOSTNAME
+            user: $USER
             directory: $DEPLOY_PATH
             sshkey: $PRIVATEKEY_PATH
