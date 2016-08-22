@@ -19,10 +19,8 @@ deploy:
             filename: $PRIVATEKEY_PATH
             content: $DEPLOY_PRIVATE
             overwrite: true
-        - script:
-            name: remove old files
-            code: ssh -i $PRIVATEKEY_PATH -l $USER -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $HOSTNAME rm -rf $DEPLOY_PATH/*
-        - script:
-            name: transfer application
-            code: |
-                scp -r -i $PRIVATEKEY_PATH public/* $USER@$HOSTNAME:$DEPLOY_PATH/
+            hide-from-log: true
+        - sjoerdmulder/rsync-deploy@0.1.0
+            host: $HOSTNAME
+            directory: $DEPLOY_PATH
+            sshkey: $PRIVATEKEY_PATH
