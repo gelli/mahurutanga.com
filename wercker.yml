@@ -20,7 +20,7 @@ deploy:
             content: $DEPLOY_PRIVATE
             overwrite: true
             hide-from-log: true
-        - sjoerdmulder/rsync-deploy@0.1.0
+        - sjoerdmulder/rsync-deploy@0.1.0:
             host: $HOSTNAME
             directory: $DEPLOY_PATH
             sshkey: $PRIVATEKEY_PATH
