@@ -25,4 +25,4 @@ deploy:
             user: $USER
             directory: $DEPLOY_PATH
             sshkey: $PRIVATEKEY_PATH
-            source: ./public
+            source: ./public/
