@@ -23,6 +23,7 @@ deploy:
         - lejoe/rsync-deploy@2.12.0:
             host: $HOSTNAME
             user: $USER
-            directory: $DEPLOY_PATH
+            homepath: $DEPLOY_PATH
+            directory: mahurutanga.com/www.mahurutanga.com/doc_root
             sshkey: $PRIVATEKEY_PATH
             source: ./public/
