@@ -20,7 +20,7 @@ deploy:
             content: $DEPLOY_PRIVATE
             overwrite: true
             hide-from-log: true
-        - sjoerdmulder/rsync-deploy@0.1.0:
+        - lejoe/rsync-deploy@2.12.0:
             host: $HOSTNAME
             user: $USER
             directory: $DEPLOY_PATH
