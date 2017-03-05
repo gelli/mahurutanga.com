@@ -3,7 +3,6 @@ categories = []
 date = "2016-08-20T17:49:32+02:00"
 tags = ["code"]
 title = "Deploying Hugo websites with Wercker"
-
 +++
 
 I'm a big fan of "Done means it's online". To make sure this is also true for this blog, I wanted each commit to automatically trigger a deployment of the whole static page. Instead of using WordPress for this page I decided to go with [Hugo](https://gohugo.io), a static site generator. In this blog article I'm going to show how I set up [Wercker](https://wercker.com) to build the website and deploy it to my shared hosting webspace at 1&1.
