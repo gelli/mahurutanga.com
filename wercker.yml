@@ -1,4 +1,4 @@
-box: switchback/git-debian
+box: golang:latest
 
 build:
   steps:
