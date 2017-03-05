@@ -10,6 +10,10 @@ build:
 
 deploy:
     steps:
+        - script:
+            name: install rsync
+            code: |
+                apt-get install rsync
         - add-to-known_hosts:
             hostname: $HOSTNAME
         - mktemp:
